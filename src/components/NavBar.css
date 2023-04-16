@@ -26,3 +26,30 @@
   color: yellow;
   text-decoration: underline;
 }
+.nav-icons {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .nav-icons {
+    display: flex;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    left: -107%;
+    text-align: center;
+    background-color: rgb(5, 5, 91);
+  }
+  .nav-item {
+    border-top: 1px solid white;
+    padding: 10px;
+  }
+  .nav-links.active {
+    left: -7%;
+  }
+}
